@@ -1,0 +1,21 @@
+POST http://localhost:5000/api/movies
+content-type: application/json
+
+{
+    "title": "Attack on Titan",
+    "genres": "['Action', ' Action', 'Award Winning', 'Drama', 'Suspense']",
+    "languages": "['English', 'Japanese']"
+}
+
+###
+PATCH http://localhost:5000/api/movies/63caf77d4cc9985b3a3cf750
+content-type: application/json
+
+{
+    "title": "Attack on Titan",
+    "genres": "['Action', ' Action', 'Award Winning', 'Drama', 'Suspense']",
+    "languages": "['English', 'Japanese']"
+}
+
+###
+DELETE http://localhost:5000/api/movies/63caf77d4cc9985b3a3cf750
